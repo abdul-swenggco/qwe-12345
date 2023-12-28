@@ -1,466 +1,295 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="" />
-    <title>facebook</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="facebook" />
+    <title>Facebook</title>
+                    <link rel="canonical" href="{{canonical_tag_href}}" />
+    <meta name="description"
+          content=""/>
     <link rel="icon" href="" type="image/x-icon" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62dc22846895ac00191ea9d1&product=inline-share-buttons" async="async"></script>
-
     <!-- Simple line icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
 
-    <!-- Favicon-->
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="home/css/styles.css" rel="stylesheet" /> 
+    <link href="home/css/quill.core.css" rel="stylesheet" />
+    <link href="home/css/styles.css" rel="stylesheet" />
+    <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script id="dynamicScript" defer></script>
+<script>
+        // Use JavaScript to dynamically set the src attribute of the script tag
+        var scriptElement = document.getElementById('dynamicScript');
+        scriptElement.src = 'path/to/your/script.js';
+    </script>
     <style>
         .bg-header {
-            background-color: rgba(0, 0, 0, 0.6);
-        }
+            --bs-bg-opacity: 1;
 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6),#000000) !important;
+        }
         .bg-footer {
             --bs-bg-opacity: 1;
-            background-image: linear-gradient( #000000, #000000);
+            background-image: linear-gradient(#000000,#000000) !important;
+        }
+        .header-text-color{
+            color: #ffffff !important;
+        }
+        .footer-text-color .navbar-brand{
+            color: #ffffff !important;
+        } .footer-text-color{
+              color: #ffffff !important;
+          }
+        section:nth-child(even) .order-lg-2{
+            order: 0 !important;
+        }
+        h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+            font-weight: 500 !important;
         }
 
-        .header-text-color {
-            color: #ffffff;
-        }
-
-        .footer-text-color {
-            color: #ffffff;
-        }
-
-        .footer-text-color .navbar-brand {
-            color: #ffffff;
-        }
-
-        .navbar-nav .active {
-            border-bottom: solid 1px #ffffff;
-        }
-
-        .top-area {
-            position: relative;
-            opacity: 1;
-            height: 400px;
-        }
-
-        .transparent-layer {
-            position: absolute;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .top-area::before {
-            content: ' ';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            background-image: url(banner_image.jpg);
-            background-repeat: no-repeat;
-            background-position: 50% 0;
-            background-size: cover;
-        }
-
-        .top-area>div {
-            position: relative;
-        }
-
-        .head-title {
-            font-size: calc(1.75rem + 1.5vw);
-            font-weight: bolder;
-            color: #fff;
-        }
-
-        .head-tagline {
-            font-size: calc(.5rem + 1.5vw);
-            color: #fff;
-        }
-
-        .header-contents {
-            margin: 0 auto;
-            text-align: center;
-        }
-{{custom_theme}}
     </style>
 </head>
-
 <body>
 <!-- Responsive navbar-->
-<div class="top-area">
-    <div class="transparent-layer">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-header">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top bg-header">
+    <div class="container px-5">
+        <a style="color: inherit; text-decoration: inherit;" href="index.html">
+            <span class="navbar-brand"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></span>
+            <span class="navbar-brand header-text-color">N-t-tm</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: inherit">
+                <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-facebook"></i></a></li>
+                <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-twitter"></i></a></li>
+                <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-instagram"></i></a></li>
+                <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-pinterest"></i></a></li>
+                <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class=" border-bottom " style="margin-top:65px;display: inherit">
+    <div class="container ql-editor" id="sitewide-header" >
+        <h1>werewq</h1>
+    </div>
+</header>
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h3 class="masthead-subheading mb-0">Facebook</h3>
+            <!--                    <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>-->
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<header class=" border-bottom " style="margin-top:65px;display: none">
+    <div class="container ql-editor">
+        
+    </div>
+</header>
+
+<section >
             <div class="container px-5">
-                <a style="color: inherit; text-decoration: inherit;" href="index.html">
-                        <span class="navbar-brand">
-                        <img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()">
-                    </span>
-                    <span class="navbar-brand header-text-color">theme</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
-                        <li class="nav-item {{home_active}}">
-                            <a class="nav-link header-text-color" href="index.html">Home</a>
-                        </li>
-                        <div class="nav-item {{service_active}} dropdown">
-                            <button class="header-text-color dropbtn is-mobile">Pages</button>
-                            <a class="nav-link header-text-color dropbtn is-desktop" href="services.html">Pages</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content2">
-                                    <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="facebook.html">facebook
-                                                                                        <span class="border-menu"></span></a></li>
-                                </div>
-                            </div>
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98045.jpg?key=pYvp2T" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How do I open Facebook with Google?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-do-i-open-facebook-with-google-1.html">Read more â</a>
                         </div>
-                        <li class="nav-item {{blog_active}}">
-                            <a class="nav-link header-text-color" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item {{contact_active}}" style="display: none">
-                            <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: inherit">
-                        <li class="nav-item" style="display: none">
-                            <a class="nav-link header-text-color" target="_blank" href="">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" style="display: none">
-                            <a class="nav-link header-text-color" target="_blank" href="">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" style="display: none">
-                            <a class="nav-link header-text-color" target="_blank" href="">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" style="display: none">
-                            <a class="nav-link header-text-color" target="_blank" href="">
-                                <i class="fa-brands fa-pinterest"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" style="display: none">
-                            <a class="nav-link header-text-color" target="_blank" href="">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </section><section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98042.jpg?key=NE8agM" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How do I log into Facebook Meta?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">Logging into Facebook Meta can be a straightforward process if you follow these step-by-step instructions. Firstly, ensure that you have a stable internet connection and a compatible device. Open your web browser and enter www.meta.com in the address...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-do-i-log-into-facebook-meta-1.html">Read more â</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98041.jpg?key=FAkblt" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How do I open Facebook with Google?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">Using Google to access Facebook provides users with a quick and convenient method to access their Facebook accounts. By simply typing the keywords in the Google search bar, users can directly open their Facebook profiles without the need to manually ...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-do-i-open-facebook-with-google.html">Read more â</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98036.jpg?key=eRyLIZ" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How do I log into Facebook Meta?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">Logging into Facebook Meta is a straightforward process that allows users to access their personalized social networking experience. To begin, navigate to the Facebook Meta website or open the Facebook Meta app on your device. Once you have reached t...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-do-i-log-into-facebook-meta.html">Read more â</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98035.jpg?key=HrMOKx" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How do I get into my old Facebook account?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">Recovering access to your previous Facebook account can be a frustrating experience, but there are steps you can take to regain control. The first thing you should do is try to remember any information related to your old account, such as the email a...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-do-i-get-into-my-old-facebook-account.html">Read more â</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="98034.jpg?key=zRyI0n" alt="Image not found" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">How can I open my Facebook?</h2>
+                            <div class="small text-muted"></div>
+                             <div class="small text-muted">2023-12-27</div>
+                             <p class="card-text">Logging into Facebook: A Step-by-Step Guide<br/><br/>To begin with, open your preferred web browser and visit the official Facebook website. Once the page has loaded, you will see the option to enter your login credentials on the right side of the sc...</p>
+                            <a class="btn btn-primary" target="_blank" href="how-can-i-open-my-facebook.html">Read more â</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <header class="py-2 border-bottom mb-4" style="display: none">
-            <div class="ql-editor py-4" id="sitewide-header">
-                
-            </div>
-        </header>
-
-        <!-- Heading Row-->
-        <div class="gx-0 align-items-center py-lg-6">
-            <div class="header-contents">
-                <h1 class="head-title">theme</h1>
-                <h4 class="head-tagline"></h4>
-            </div>
-            <div class="header-contents">
-                <a class="btn btn-banner-theme btn-md mt-2" style="display: none" target="_blank" href="tel:">Call Now</a>
-                <a class="btn btn-banner-theme btn-md mt-2" style="display: none" target="_blank" href="mailto:">Email Now</a>
-                <button id="myBtn" class="btn btn-banner-theme btn-md mt-2" style="display: none">Get Directions</button>
-            </div>
-        </div>
-    </div>
+<div class="container ql-editor mb-4" style="display:none">
+    
 </div>
-
-
-<div class="container article-container">
-
-    <div class="py-2 border-bottom mb-2" style="display: none">
-        <div class="ql-editor">
-            
-        </div>
-    </div>
-
-    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5">
-        <div class="col-lg-12 py-lg-2">
-            <h3 class="main-heading">Pages</h3>
-        </div>
-
-        <div class="col-lg-4">
-                <a href="facebook.html"  style="text-decoration: none;color: inherit;" >
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="98673.jpg?key=IsN6Q7" alt="..." />
-                </a>
-            </div>
-                <div class="col-lg-8">
-                    <a href="facebook.html"  style="text-decoration: none;color: inherit;">
-                        <div class="d-flex align-items-center title-box">
-                            <h2 class="card-title">facebook</h2>
-                        </div>
-                        <p class="card-text py-lg-2">Facebook has come a long way since its inception as 'thefacebook' in 2004. Over the years, it has undergone significant rebranding and technological advancements, transforming into the global social media giant that we know today. With features like ......
-                            <a href="facebook.html" class="text-theme">Read More</a>
-                        </p>
-
-                    </a>
-                </div>
-                <div class="col-md-12">
-                    <hr/>
-                </div>
-
-        <div class="col-md-12">
-            <a href="services.html" style="text-decoration: none">
-                <div class="all-article-link" style="padding-top:20px;padding-bottom:20px;border: 1px solid #bdbdbd; border-radius: 3px; height: 70px; text-align:center">
-                    <h4 class="">View Pages</h4>
-                </div>
-            </a>
-        </div>
-    </div>
-
-
-    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5 cards-container">
-        <div class="col-lg-12 py-lg-2">
-            <h3 class="main-heading">theme: Latest Blog Posts</h3>
-        </div>
-
-
-        <div class="col-md-6 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                        <a href="what-is-facebook-lite-for-iphone.html" style="text-decoration: none;color: inherit;">
-                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
-                                <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
-                            </div>
-                             <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">What is Facebook Lite for Iphone?</h2>
-                            </div>
-                            <p class="card-text py-lg-2">Facebook Lite for iPhone is a lightweight app that aims to enhance the user experience for iPhone users. With its minimalistic design and simplified features, Facebook Lite provides a smoother and faster browsing experience, regardless of the device'......</p>
-                            <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="what-is-facebook-lite-for-iphone.html">
-                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                           </a>
-                        </div>
-                    </div>
-                </div><div class="col-md-6 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                        <a href="where-can-i-find-facebook-lite.html" style="text-decoration: none;color: inherit;">
-                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
-                                <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
-                            </div>
-                             <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">Where can I find Facebook Lite?</h2>
-                            </div>
-                            <p class="card-text py-lg-2">Facebook Lite is a mobile app specifically designed for Android devices that offers a faster and lighter alternative to the regular Facebook app. This stripped-down version of the app retains the core functionalities of Facebook, allowing users to co......</p>
-                            <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="where-can-i-find-facebook-lite.html">
-                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                           </a>
-                        </div>
-                    </div>
-                </div><div class="col-md-6 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                        <a href="is-facebook-lite-gone.html" style="text-decoration: none;color: inherit;">
-                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
-                                <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
-                            </div>
-                             <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">Is Facebook Lite gone?</h2>
-                            </div>
-                            <p class="card-text py-lg-2">Facebook Lite has recently rolled out its latest update, bringing a range of new features and improvements to its users. The update aims to enhance the user experience and address some of the issues that users have been facing. One notable impact of ......</p>
-                            <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="is-facebook-lite-gone.html">
-                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                           </a>
-                        </div>
-                    </div>
-                </div><div class="col-md-6 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                        <a href="what-is-difference-between-facebook-and-facebook-lite.html" style="text-decoration: none;color: inherit;">
-                            <div class="py-lg-2" style="display: {{show_date_auth_section}}">
-                                <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2023-12-27</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
-                            </div>
-                             <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">What is difference between Facebook and Facebook Lite?</h2>
-                            </div>
-                            <p class="card-text py-lg-2">Facebook and Facebook Lite are two versions of the popular social media platform, each offering its own unique set of features and functionality to its users. While both versions allow individuals to connect with friends and family, share updates and......</p>
-                            <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="what-is-difference-between-facebook-and-facebook-lite.html">
-                                    <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                           </a>
-                        </div>
-                    </div>
-                </div>
-        <div class="col-md-12">
-            <a href="blog.html" style="text-decoration: none">
-                <div class="all-article-link" style="padding-top:20px;padding-bottom:20px;border: 1px solid #bdbdbd; border-radius: 3px; height: 70px; text-align:center">
-                    <h4 class="">View Posts</h4>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="ql-editor mb-4" style="display:none">
-        
-    </div>
-    <div class="pb-5 ql-editor" id="sitewide-footer" style="display:none">
-        
-    </div>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; display: none">
-                <iframe src="" frameborder="0" style="border:0; " allowfullscreen></iframe>
-            </div>
-            
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Footer-->
-
-<footer class="py-5 bg-dark text-center">
-
+<div class="py-5 bg-gray-200 text-muted">
     <div class="container">
-        <div class="row  py-lg-3">
-            <div class="col-md-7">
-                <table style="text-align: left">
-                    <tr>
-                        <td width="15%">
-                            <h2>
-                                <a style="color: inherit;text-decoration: auto;" href="index.html"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></a>
-                            </h2>
-                        </td>
-                        <td style="text-align: left">
-                            <h2><a style="color: inherit;text-decoration: auto;" href="index.html">theme</a></h2>
-                        </td>
-                    </tr>
-                    <tr style="display: none">
-                        <td width="15%"><i class="fa fa-map-marker-alt"></i></td>
-                        <td style="text-align: left"></td>
-                    </tr>
-                    <tr style="display: none">
-                        <td width="15%"><i class="fa fa-phone"></i></td>
-                        <td style="text-align: left"></td>
-                    </tr>
-                    <tr style="display: none">
-                        <td width="15%"><i class="fa fa-envelope"></i></td>
-                        <td style="text-align: left"></td>
-                    </tr>
-                </table>
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+
+                <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
 
             </div>
+            <div class="col-lg-4">
+                <h6 style=" display: inherit" class="text-uppercase text-dark mb-3">
+                    <a href="sitemap.html">Sitemap</a>
+                </h6>
 
-
-            <div class="col-md-4">
-                <table class="float-start float-md-end" style="margin-left: 40px;">
-                    <tr>
-                        <td style="text-align: left;display: inherit"><a style="text-decoration: none" href="terms.html">Terms of Use</a></td>
-                    </tr>
-
-                    <tr>
-                        <td style="text-align: left;display: inherit"><a style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: left;display: inherit"><a style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: left;display: none"><a style="text-decoration: none" href="contact.html">Contact Us</a></td>
-                    </tr>
-                </table>
+                <h6 style=" display: inherit" class="text-uppercase text-dark mb-3">
+                    <a href="contact.html">Contact Us!</a>
+                </h6>
 
             </div>
         </div>
     </div>
-
-    <ul class="mt-3 mb-3" style="display: inherit">
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-footer text-center footer-text-color">
+    <div class="container mb-4 ql-editor" id="sitewide-footer" style="display:inherit">
+        <h1>werewq</h1>
+    </div>
+    <div class="container mb-4">
+        <a href="index.html" style="text-decoration: none;">
+            <p class="m-0 text-center ">
+                <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></span>
+                <span class="navbar-brand">N-t-tm</span>
+            </p>
+        </a>
+    </div>
+    <ul class="list-inline mb-4" style="display: inherit">
         <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="mr-3" target="_blank" href=""><i class="fa-2x icon-social-facebook"></i></a>
+            <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href=""><i class="icon-social-facebook"></i></a>
         </li>
-        <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="mr-3" target="_blank" href=""><i class="fa-2x icon-social-twitter"></i></a>
+        <li class="list-inline-item"  style="display: none">
+            <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href=""><i class="icon-social-twitter"></i></a>
         </li>
-        <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="mr-3" target="_blank" href=""><i class="fa-2x icon-social-instagram"></i></a>
+        <li class="list-inline-item"  style="display: none">
+            <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-instagram"></i></a>
         </li>
-        <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="mr-3" target="_blank" href=""><i class="fa-2x icon-social-pinterest"></i></a>
+        <li class="list-inline-item"  style="display: none">
+            <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-pinterest"></i></a>
         </li>
-        <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="mr-3" target="_blank" href=""><i class="fa-2x icon-social-youtube"></i></a>
+        <li class="list-inline-item"  style="display: none">
+            <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-youtube"></i></a>
         </li>
     </ul>
-
-    <div class="">
-        <hr/>
-    </div>
-    <div class="container">
-        <p class="m-0 text-center ">Copyright &copy; theme. All rights reserved.</p>
-    </div>
+    <div class="container"><p class="m-0 text-center">Copyright &copy; N-t-tm. All Rights Reserved.</p></div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="home/js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    const url = window.location.href;
+    let domain = (new URL(url));
+    let hostname = domain.hostname;
+    let pathname = domain.pathname.split('/');
+    let protocol = domain.protocol;
+    let path = document.querySelectorAll('[rel=\"canonical\"]')[0].getAttribute('href');
+        if(pathname.length > 2){
+            path = pathname[1]+'/'+document.querySelectorAll('[rel=\"canonical\"]')[0].getAttribute('href');
         }
-    }
+        let domain_url =  protocol +'//'+hostname+'/'+path+'.html';
+    document.querySelectorAll('[rel="canonical"]')[0].setAttribute('href', domain_url);
 </script>
 </body>
-
 </html>
